@@ -10,14 +10,14 @@ public class Person implements Comparable<Person>{
   private String ssn;
   private boolean propertyChangeFired = false;
 
-  //private static int count;
+  private static int count;
   
   public Person() {
     this("", 0, 0.0d);
   }
   
   public Person(String n, int a, double s) {
-    //count++;
+    count++;
     name = n;
     age = a;
     salary = s;
@@ -87,7 +87,7 @@ public class Person implements Comparable<Person>{
   }
 
   public int count() {
-    return 1;
+    return count;
   }
 
   public boolean equals(Object other) {
